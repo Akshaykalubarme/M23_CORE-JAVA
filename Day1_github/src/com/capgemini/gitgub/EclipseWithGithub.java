@@ -3,7 +3,7 @@ package com.capgemini.gitgub;
 public class EclipseWithGithub {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	
 		System.out.println("Welcome to capgemini");
 
 	}
