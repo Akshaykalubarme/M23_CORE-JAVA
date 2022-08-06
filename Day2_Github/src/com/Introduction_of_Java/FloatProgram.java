@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 	public static void main(String[] args) {
 		
+		@SuppressWarnings("resource")
 		Scanner s=new Scanner(System.in);
 		System.out.println("Enter the value of a :");
 		float a=s.nextFloat();
