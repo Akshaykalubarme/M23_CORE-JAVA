@@ -1,4 +1,4 @@
-package com.cg.operators;
+package com.operators;
 
 // Program on Assignment operator
 public class AssignmentOperator {

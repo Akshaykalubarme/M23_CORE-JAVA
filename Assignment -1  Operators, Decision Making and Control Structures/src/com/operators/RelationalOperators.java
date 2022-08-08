@@ -1,4 +1,4 @@
-package com.cg.operators;
+package com.operators;
 
 import java.util.Scanner;
 
