@@ -7,6 +7,7 @@ public class Executor {
 		@SuppressWarnings("unused")
 		Base2 b=new Base2();
 		
+		@SuppressWarnings("unused")
 		Base2 b1=new Base2(23);
 
 	}

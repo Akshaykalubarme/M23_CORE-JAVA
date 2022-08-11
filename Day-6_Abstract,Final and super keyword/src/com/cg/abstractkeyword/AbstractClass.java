@@ -21,8 +21,6 @@ class Lily extends Flower
 		}
 	}
 public class AbstractClass{
-	
-
 	public static void main(String[] args) {
         // we can't create the object for abstract class
 		//Flower f=new Flower();

@@ -1,5 +1,5 @@
 package com.cg.abstractkeywordDemo;
-//Abstract class
+
 public class Sweet extends RasMalai {
 	
 	public Sweet()
