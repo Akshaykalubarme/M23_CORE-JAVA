@@ -7,6 +7,7 @@ class A
 	{
 		System.out.println(a+b);
 	}
+	
 	void add(float a,float b)
 	{
 		System.out.println(a+b);
