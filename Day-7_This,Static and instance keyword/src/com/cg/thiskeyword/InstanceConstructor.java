@@ -5,7 +5,7 @@ class A
 	public int num;
 	A()
 	{
-		System.out.println("Welcomr to M23 Batch");
+		System.out.println("Welcome to M23 Batch");
 	}
 	A(int num)
 	{
