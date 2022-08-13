@@ -21,7 +21,7 @@ class Pulser
 		speed=sp;
 		color=col;
 	}
-	void accept()
+	void display()
 	{
 		System.out.println("Speed is:"+speed+"km/hr" +" and color is: "+color);
 	}
@@ -31,7 +31,8 @@ public class ParameterizedConstruct {
 	public static void main(String[] args) {
 	
 		Pulser p=new Pulser(50,"Black");
-		p.accept();
+		p.display();
+	
 
 	}
 
