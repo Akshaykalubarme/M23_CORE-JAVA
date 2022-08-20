@@ -8,6 +8,7 @@ public class Example5 {
 		System.out.println(s.charAt(1));
 		
 		s.setCharAt(1, 'a');
+		
 		System.out.println(s);
 		System.out.println(s.charAt(1));
 		
