@@ -1,0 +1,29 @@
+package com.cg.map;
+
+import java.util.NavigableMap;
+import java.util.TreeMap;
+
+public class TreeMapExample {
+	
+	public static void main(String[] args) {
+		NavigableMap<Integer,String> map=new TreeMap<Integer,String>();
+		map.put(12,"Akshay");
+		map.put(14,"Vishal");
+		map.put(16,"ac");
+		map.put(19,"bc");
+		map.put(18,"dfg");
+		map.put(17,"xyz");
+		
+		System.out.println(map.firstKey());
+
+		System.out.println(map.firstEntry());
+		System.out.println(map.lastKey());
+
+		System.out.println(map.lastEntry());
+		System.out.println(map);
+		
+		
+
+	}
+
+}
