@@ -27,7 +27,6 @@ public class ConcurrancyDemo
 		//executor server instance
 		ExecutorService obj=Executors.newFixedThreadPool(10);
 		obj.execute(r);
-		@SuppressWarnings("unused")
 		Future<String> res=obj.submit(r,"Done");
 		//isDone{}-> if the task is completed it reyirns true else false
 		while (res.isDone()==false)
