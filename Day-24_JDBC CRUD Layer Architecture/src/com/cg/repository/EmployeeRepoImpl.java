@@ -12,8 +12,7 @@ import com.cg.entities.Employee;
 public class EmployeeRepoImpl implements EmployeeRepo{
 	EmployeeDao dao;
 	
-	
-	public EmployeeRepoImpl() 
+	public EmployeeRepoImpl()
 	{
 		dao=new EmployeeDao();
 	}
@@ -55,10 +54,7 @@ public class EmployeeRepoImpl implements EmployeeRepo{
 			
 		}
 		return r;
-		
-		
-
-		
+	
 	}
 
 	@Override

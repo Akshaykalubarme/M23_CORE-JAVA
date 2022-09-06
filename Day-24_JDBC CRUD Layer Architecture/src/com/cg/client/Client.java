@@ -18,11 +18,11 @@ public class Client
 		{
 			System.out.println("Enter the choice "
 					+"1. Retrieve a particular employee"
-					+"2.Retrieve all employees"
-					+"3.Delete an employee"
-					+"4.Insert an Employee"
-					+"5.Update an Employee"
-					+"-1:Exit");
+					+"2. Retrieve all employees"
+					+"3. Delete an employee"
+					+"4. Insert an Employee"
+					+"5. Update an Employee"
+					+"-1: Exit");
 			choice=s.nextInt();
 			switch(choice)
 			{

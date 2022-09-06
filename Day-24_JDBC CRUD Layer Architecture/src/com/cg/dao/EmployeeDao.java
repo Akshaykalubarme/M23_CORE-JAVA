@@ -10,9 +10,9 @@ public class EmployeeDao
 	//making a connection between Java and MySql
 	public Connection createConnection()
 	{
-		String URL="jdbc:mysql://localhost:3306/TNS";
+		String URL="jdbc:mysql://localhost:3307/TNS";
 		String user="root";
-		String password="jenny";
+		String password="root";
 		try
 		{
 			Class.forName("com.mysql.cj.jdbc.Driver");
