@@ -4,7 +4,7 @@ public abstract class SavingAcc extends BankAcc
 {
 	
 	private boolean isSalaried;
-   @SuppressWarnings("unused")
+  
    private static final float MINBAL=500;
    
    public SavingAcc(int accno, String accname, float accbal, boolean isSalaried) {
