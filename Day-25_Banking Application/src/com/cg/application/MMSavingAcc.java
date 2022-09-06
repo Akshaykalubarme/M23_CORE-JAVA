@@ -2,23 +2,16 @@ package com.cg.application;
 
 import com.cg.Framework.SavingAcc;
 
-public class MMSavingAcc extends SavingAcc
-{
+public class MMSavingAcc extends SavingAcc {
 
-	public MMSavingAcc(int accNo, String accNm, float accBal, boolean isSalaray) {
-		super(accNo, accNm, accBal, isSalaray);
+	public MMSavingAcc(int accno, String accname, float accbal, boolean isSalaried) {
+		super(accno, accname, accbal, isSalaried);
 		
 	}
 
 	@Override
 	public String toString() {
-		return "MMSavingAcc [toString()=" + super.toString() + "]";
+		return String.format("MMSavingAcc []");
 	}
-	public void withdraw(float accBal)
-	{
-		System.out.println("Account No: "+this.getAccNo()+" "+"Account Name: "+this.getAccNm()
-		+"Charges is: "+this.getAccBal());
-	}
-		
 
 }

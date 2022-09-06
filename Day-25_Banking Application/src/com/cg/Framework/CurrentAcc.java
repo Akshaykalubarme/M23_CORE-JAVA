@@ -1,21 +1,32 @@
 package com.cg.Framework;
 
-public abstract class CurrentAcc extends BankAcc
-{
-	private  float creditLimit;
-	//Generate constructor using fields
-	public CurrentAcc(int accNo, String accNm, float accBal, float creditLimit) {
-		super(accNo, accNm, accBal);
-		this.creditLimit = creditLimit;
-	}
-	public void withdraw(float accBal)
-	{
-		System.out.println("Account No: "+this.getAccNo()+" "+"Account Name: "+this.getAccNm()
-		+"Charges is: "+this.getAccBal());
+public abstract class CurrentAcc extends BankAcc {
+	private static float creditLimit;
+
+	//constructor
+	@SuppressWarnings("static-access")
+	public CurrentAcc(int accno, String accname, float accbal,float creditLimit) {
+		super(accno, accname, accbal);
+		this.creditLimit=creditLimit;
+		
 	}
 	@Override
 	public String toString() {
-		return "CurrentAcc [creditLimit=" + creditLimit + "]";
+		return String.format("CurrentAcc [creditLimit=%s]", creditLimit);
 	}
-	
+	public void withdraw(float WithdrawAmu)	
+	{
+	if(WithdrawAmu>=creditLimit)
+		
+	{
+		//System.out.println("Your credit limit is "+creditLimit);
+		System.out.println("Account no: "+this.getAccno()+" Account name: "+this.getAccname()+" Account Balance: "+(Accbal-WithdrawAmu)+" With Maximum CreditLimit Rs "+creditLimit);
+	}
+	else
+	{
+		//System.out.println("Account no"+this.getAccno()+" Account name "+this.getAccname()+" Account Balance "+(Accbal-WithdrawAmu)+" With Maximum CreditLimit Rs "+creditLimit);
+		System.out.println("Your credit limit is "+creditLimit);
+	}
+
+	}
 }

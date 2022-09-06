@@ -4,19 +4,20 @@ import com.cg.Framework.BankFactory;
 import com.cg.Framework.CurrentAcc;
 import com.cg.Framework.SavingAcc;
 
-public class MMBankFactory extends BankFactory
-{
+public class MMBankFactory extends BankFactory {
 
 	@Override
-	public SavingAcc getNewSavingAcc(int accNo, String accNm, float accBal) {
-		
-		return null;
+	public SavingAcc getNewSavingAcc(int accno, String accname, float accbal, boolean isSalaried) {
+		MMSavingAcc s=new MMSavingAcc( accno,accname, accbal, isSalaried);
+		return s;
 	}
 
 	@Override
-	public CurrentAcc getNewCurrentAcc(int accNo, String accNm, float accBal) {
-		
-		return null;
+	public CurrentAcc getCurrentAcc(int accno, String accname, float accbal, float creditLimit) {
+		MMCurrentAcc c=new MMCurrentAcc( accno,accname, accbal, creditLimit);
+		return c;
 	}
-	
-}
+
+}	
+
+

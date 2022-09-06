@@ -1,41 +1,46 @@
 package com.cg.Framework;
 
 public abstract class BankAcc 
-{
-	private int accNo;
-	private String accNm;
-	private float accBal;
-	public BankAcc(int accNo, String accNm, float accBal) {
+	{
+	private int Accno;
+	private String Accname;
+    protected float Accbal;
+	public BankAcc(int accno, String accname, float accbal) {
 		super();
-		this.accNo = accNo;
-		this.accNm = accNm;
-		this.accBal = accBal;
+		Accno = accno;
+		Accname = accname;
+		Accbal = accbal;
 	}
-	public int getAccNo() {
-		return accNo;
+	
+	public int getAccno() {
+		return Accno;
 	}
-	public void setAccNo(int accNo) {
-		this.accNo = accNo;
+	public void setAccno(int accno) {
+		Accno = accno;
 	}
-	public String getAccNm() {
-		return accNm;
+	public String getAccname() {
+		return Accname;
 	}
-	public void setAccNm(String accNm) {
-		this.accNm = accNm;
+	public void setAccname(String accname) {
+		Accname = accname;
 	}
-	public float getAccBal() {
-		return accBal;
+	public float getAccbal() {
+		return Accbal;
 	}
-	public void setAccBal(float accBal) {
-		this.accBal = accBal;
+	public void setAccbal(float accbal) {
+		Accbal = accbal;
 	}
+     
+	public  void withraw(float Accbal)
+	{
+		
+	}
+	public void deposite(float Accbal) 
+	{
+	
+	}	
 	@Override
 	public String toString() {
-		return "BankAcc [accNo=" + accNo + ", accNm=" + accNm + ", accBal=" + accBal + "]";
-	}
-	abstract public void withdraw(float charges);
-	public void deposite(float charges)
-	{
-		System.out.println(charges);
+		return String.format("BankAcc [Accno=%s, Accname=%s, Accbal=%s]", Accno, Accname, Accbal);
 	}
 }
