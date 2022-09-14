@@ -17,7 +17,7 @@ class Pulser extends Bike
 		System.out.println("Speed is: "+speed);
     }
 }
-class Pulser125 extends Bike
+class Pulser125 extends Pulser
 {
 	public String color;
 
@@ -37,9 +37,7 @@ public class MultiLevelInhertance {
 		p.speed=80;
 		p.accept();
 		p.display();
-	
-		
-
+		p.print();
 	}
 
 }
