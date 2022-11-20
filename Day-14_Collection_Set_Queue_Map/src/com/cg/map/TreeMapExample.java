@@ -9,10 +9,10 @@ public class TreeMapExample {
 		NavigableMap<Integer,String> map=new TreeMap<Integer,String>();
 		map.put(12,"Akshay");
 		map.put(14,"Vishal");
-		map.put(16,"ac");
-		map.put(19,"bc");
-		map.put(18,"dfg");
-		map.put(17,"xyz");
+		map.put(11,"Amol");
+		map.put(20,"Sapna");
+		map.put(18,"Vaibhav");
+		map.put(17,"Aditya");
 		
 		System.out.println(map.firstKey());
 

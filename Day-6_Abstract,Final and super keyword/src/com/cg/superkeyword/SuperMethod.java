@@ -25,4 +25,4 @@ public class SuperMethod{
 	B b=new B();
 	b.print();
 }
-}
+}  
